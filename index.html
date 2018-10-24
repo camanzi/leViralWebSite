@@ -214,6 +214,23 @@
 		</div>
 	</div>
 		<script>
+			setTimeout(() => {
+				var x = document.getElementById("form");
+				if (x.style.display === "none") {
+					x.style.display = "block";
+				}
+			}, 3000);
+		
+			function exit() {
+				document.getElementById("form").style.display = "none";
+			}
+			
+			document.getElementById('guessButton').addEventListener("click", function(event){
+		event.preventDefault();
+		exit();
+		})
+		</script>
+		<script>
 			$(document).on("scroll", function(){
 				if ($(document).scrollTop() > 86) {
 					$("#banner").addClass("shrink");
