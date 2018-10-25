@@ -268,7 +268,7 @@ ul, ol {
 }
 
 .overlay {
-	z-index: 33;
+	z-index: 100000;
 	width: auto;
 	height: auto;
 	background-color: white;
@@ -276,7 +276,7 @@ ul, ol {
 
 .form {
   position: relative;
-  z-index: 4;
+  z-index: 99999;
   background: #FFFFFF;
   max-width: 360px;
   margin: 0 auto 100px;
