@@ -265,10 +265,11 @@ ul, ol {
     min-height: 1em;
 	height: 30%;
     width: 25%;
+	z-index: 101;
 }
 
 .overlay {
-	z-index: 100000;
+	z-index: 100;
 	width: auto;
 	height: auto;
 	background-color: white;
@@ -276,7 +277,7 @@ ul, ol {
 
 .form {
   position: relative;
-  z-index: 99999;
+  z-index: 99;
   background: #FFFFFF;
   max-width: 360px;
   margin: 0 auto 100px;
