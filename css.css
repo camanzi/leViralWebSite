@@ -184,7 +184,7 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 }
 
 .parallax {
-    /* The image used */
+    /* The image used (body background) */
     background-image: url("res/img/bg.jpg");
 
     /* Create the parallax scrolling effect */
