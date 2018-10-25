@@ -345,7 +345,11 @@ ul, ol {
   color: #EF3B3A;
 }
 
-.resized{
+.resized {
 	height: 70%;
 	width: auto;
+}
+
+.padded {
+	padding: 1%;
 }
