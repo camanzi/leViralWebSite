@@ -42,7 +42,10 @@
             </nav>
             <div class="banner">
                 <div class="container" id="container">
-                    <img src="res/img/penguin.png" id="pix">
+                    <img src="res/img/logo2.png" id="pix">
+					<img src="res/img/logo2.png" id="pix2">
+					<img src="res/img/logo2.png" id="pix3">
+					<img src="res/img/logo2.png" id="pix4">
                     <div class="banner-text">
                         <div class="banner-heading">
                             leViral
@@ -82,6 +85,17 @@
                     </div>
                 </div>
             </div>
+			<div id="form" style="display: none;">
+				<div class="form">
+					<form class="register-form">
+				  		<input type="text" placeholder="name"/>
+				  		<input type="password" placeholder="password"/>
+				  		<input type="text" placeholder="email address"/>
+				  		<button id="guessButton">esci</button>
+				  		<p class="message">Already registered?</p>
+					</form>
+			  	</div>
+			</div>
             <div id="services">
                 <div class="container-fluid bg-warning">
                     <h2 class="distanced">OUR SERVICES</h2>
@@ -219,7 +233,7 @@
             	if (x.style.display === "none") {
             		x.style.display = "block";
             	}
-            }, 3000);
+            }, 6500);
             
             function exit() {
             	document.getElementById("form").style.display = "none";
@@ -241,9 +255,11 @@
         </script>
         <script>
             $("#container").mousemove(function(e) {
-              parallaxIt(e, ".slide", -200);
               //parallaxIt(e, "img", -30);
               parallaxIt(e, "#pix", -400);
+			  parallaxIt(e, "#pix2", -200);
+			  parallaxIt(e, "#pix3", +400);
+			  parallaxIt(e, "#pix4", +200);
             });
             
             function parallaxIt(e, target, movement) {
@@ -259,12 +275,3 @@
         </script>
     </body>
 </html>
-<!-- <div class="overlay" id="form" style="">
-    <form action="">
-      <input id="name" placeholder="name" type="text"><br>
-      <input id="surname" placeholder="surname" type="text"><br>
-      <input id="email" placeholder="email" type="text"><br>
-      <input id="tel" placeholder="tel" type="text"><br>
-      <button id="guessButton">Exit</button>
-    </form>
-    </div> -->
