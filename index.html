@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css.css">
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
@@ -87,11 +88,13 @@
 			<div id="form" style="display: none;">
 				<div class="form">
 					<form class="register-form">
-				  		<input type="text" placeholder="name"/>
-				  		<input type="password" placeholder="password"/>
-				  		<input type="text" placeholder="email address"/>
-				  		<button id="guessButton">esci</button>
-				  		<p class="message">Already registered?</p>
+						<h1 style="text-align: center; font-family: 'Oswald'">Contact us</h1>
+						<h5 style="text-align: center; font-family: 'Oswald'">You will be contacted back within 5 minutes</h5>
+				  		<input type="text" placeholder="Name"/>
+				  		<input type="text" placeholder="Phone number"/>
+				  		<input type="email" placeholder="Email address"/>
+				  		<button id="submit">Submit</button>
+						<p class="message">Are you not interested? <a role="button" onclick="exit()">Click here</a></p>
 					</form>
 			  	</div>
 			</div>
@@ -179,7 +182,7 @@
                         </div>
                     </div>
                 </div>
-                <footer class="section footer-classic context-dark bg-image" style="background: #2d3246; padding-top: 20px;">
+                <footer class="section footer-classic context-dark bg-image" style="background-color: #212529;padding-top: 20px;"><!--Old bg-color: #2d3246-->
                     <div class="container">
                         <div class="row row-30">
                             <div class="col-md-4 col-xl-5">
@@ -210,16 +213,16 @@
                             <div class="col-md-4 col-xl-3">
                                 <h5 style="color:#fff;">Links</h5>
                                 <ul class="nav-list">
-                                    <li><a href="#about">About</a></li>
-                                    <li><a href="services.html">Our services</a></li>
-                                    <li><a href="portfolio.html">Portfolio</a></li>
-                                    <li><a role="button" class="btn" onclick="">Contact us</a></li> <!-- QUI POTREMMO FARE USCIRE IL POPUP-->
+                                    <li><a role="button" class="btn" href="#about">About</a></li>
+                                    <li><a role="button" class="btn" href="services.html">Our services</a></li>
+                                    <li><a role="button" class="btn" href="portfolio.html">Portfolio</a></li>
+                                    <li><a role="button" class="btn" onclick="displayForm()">Contact us</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="row no-gutters social-container">
-                        <div class="col-md-4"><a class="social-inner" href="https://www.facebook.com/LeViral.Agency/"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
+                        <div class="col-md-4"><a class="social-inner" href="https://www.facebook.com/LeViral.Agency/"><span></span><span>Facebook</span></a></div>
                         <div class="col-md-4"><a class="social-inner" href="#"><span class="icon mdi mdi-twitter"></span><span>Twitter</span></a></div>
                         <div class="col-md-4"><a class="social-inner" href="#"><span class="icon mdi mdi-youtube-play"></span><span>Google+</span></a></div>
                     </div>
@@ -232,7 +235,7 @@
             	if (x.style.display === "none") {
             		x.style.display = "block";
             	}
-            }, 6500);
+            }, (6500-1500));
             
             function exit() {
             	document.getElementById("form").style.display = "none";
