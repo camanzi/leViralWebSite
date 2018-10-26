@@ -354,13 +354,11 @@ ul, ol {
 	padding: 1%;
 }
 
-<<<<<<< HEAD
 .centeredCard {
 	text-align: center;
 	margin-left: 37.5%;
 	margin-top: 10%;
-=======
-button:hover {
+}
+	button:hover {
 	background-color: #212529;
->>>>>>> 9b5f0a3a821a7833d075293a935391b8335df854
 }
