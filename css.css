@@ -364,6 +364,6 @@ ul, ol {
 	background-color: white;
 }
 
-button:hover {
+a.whited:hover {
 	background-color: #212529;
 }
