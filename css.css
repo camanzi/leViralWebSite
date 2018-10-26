@@ -353,3 +353,7 @@ ul, ol {
 .padded {
 	padding: 1%;
 }
+
+button:hover {
+	background-color: #212529;
+}
