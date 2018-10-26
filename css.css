@@ -353,3 +353,9 @@ ul, ol {
 .padded {
 	padding: 1%;
 }
+
+.centeredCard {
+	text-align: center;
+	margin-left: 37.5%;
+	margin-top: 10%;
+}
