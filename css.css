@@ -360,6 +360,9 @@ ul, ol {
 	margin-top: 10%;
 }
 
+.whited {
+	background-color: white;
+}
 button:hover {
 	background-color: #212529;
 }
